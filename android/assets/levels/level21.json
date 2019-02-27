@@ -1,0 +1,1763 @@
+[
+  {
+    "INFO": [
+      {
+        "2star": 20,
+        "3star": 10
+	  }
+	  ]
+  }
+  {
+    "JSONtiles": [
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 352,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 336,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 320,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 304,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 288,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 368,
+        "textureX": 32,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 368,
+        "textureX": 0,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 336,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 320,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 304,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 288,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 352,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 368,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 416,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 400,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 384,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 352,
+        "worldY": 272,
+        "textureX": 0,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 352,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 336,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 320,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 304,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 288,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 368,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 352,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 336,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 320,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 304,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 288,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 368,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 352,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 336,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 320,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 304,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 288,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 368,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 352,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 336,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 320,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 304,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 288,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 368,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 352,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 336,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 320,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 304,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 288,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 368,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 432,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 272,
+        "textureX": 16,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 512,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 528,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 544,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 256,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 304,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 320,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 336,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 352,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 288,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 368,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 368,
+        "textureX": 32,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 336,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 320,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 304,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 288,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 352,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 304,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 352,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 336,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 320,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 288,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 368,
+        "textureX": 0,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 400,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 416,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 432,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 464,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 480,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 384,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 400,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 416,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 432,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 464,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 480,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 384,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 400,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 416,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 432,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 464,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 480,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 496,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 512,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 528,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 384,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 512,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 528,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 496,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 512,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 496,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 528,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 544,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 544,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 544,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 400,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 416,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 432,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 464,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 480,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 496,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 512,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 528,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 544,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 384,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 400,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 416,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 432,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 464,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 480,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 496,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 512,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 528,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 544,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 384,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 560,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 560,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 560,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 576,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 576,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 576,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 592,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 608,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 624,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 624,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 624,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 608,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 592,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 592,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 608,
+        "textureX": 16,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 640,
+        "textureX": 0,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 640,
+        "textureX": 32,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 592,
+        "worldY": 640,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 608,
+        "worldY": 640,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 576,
+        "worldY": 640,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 608,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 592,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 576,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 560,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 624,
+        "worldY": 624,
+        "textureX": 32,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 608,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 592,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 576,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 560,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 624,
+        "textureX": 0,
+        "textureY": 16
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 432,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 432,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 448,
+        "textureX": 0,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 448,
+        "textureX": 32,
+        "textureY": 32
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 480,
+        "worldY": 464,
+        "textureX": 0,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 496,
+        "worldY": 464,
+        "textureX": 32,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 304,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 320,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 336,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 352,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 368,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 448,
+        "worldY": 288,
+        "textureX": 48,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 352,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 336,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 320,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 304,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 288,
+        "textureX": 64,
+        "textureY": 48
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 464,
+        "worldY": 368,
+        "textureX": 64,
+        "textureY": 48
+      }
+    ],
+    "JSONprops": [
+      {
+        "propType": "SNOWTREE",
+        "worldX": 480,
+        "worldY": 448
+      },
+      {
+        "propType": "SNOWTREE",
+        "worldX": 352,
+        "worldY": 352
+      },
+      {
+        "propType": "SNOWTREE",
+        "worldX": 560,
+        "worldY": 624
+      }
+    ],
+    "JSONlogic": [
+      {
+        "attr": "WIN",
+        "worldX": 562,
+        "worldY": 626,
+        "width": 75,
+        "height": 27,
+        "textureX": 80,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 560,
+        "worldY": 284,
+        "width": 79,
+        "height": 100,
+        "textureX": 48,
+        "textureY": 0
+      },
+      {
+        "attr": "HARDSLIDE",
+        "worldX": 447,
+        "worldY": 283,
+        "width": 113,
+        "height": 100,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "HARDSLIDE",
+        "worldX": 559,
+        "worldY": 383,
+        "width": 81,
+        "height": 176,
+        "textureX": 64,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 399,
+        "worldY": 285,
+        "width": 48,
+        "height": 98,
+        "textureX": 48,
+        "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 559,
+        "worldY": 559,
+        "width": 81,
+        "height": 53,
+        "textureX": 48,
+        "textureY": 0
+      }
+    ],
+    "JSONobjects": [
+      {
+        "type": "PLAYER",
+        "worldX": 390.0,
+        "worldY": 326.0,
+        "patrolX": 0.0,
+        "patrolY": 0.0
+      },
+      {
+        "type": "PENGUIN",
+        "worldX": 568.0,
+        "worldY": 629.3121,
+        "patrolX": 0.0,
+        "patrolY": 0.0
+      },
+      {
+        "type": "PENGUIN",
+        "worldX": 587.5,
+        "worldY": 646.06177,
+        "patrolX": 0.0,
+        "patrolY": 0.0
+      },
+      {
+        "type": "PENGUIN",
+        "worldX": 607.0,
+        "worldY": 645.26416,
+        "patrolX": 0.0,
+        "patrolY": 0.0
+      }
+    ],
+    "JSONSpawn": []
+  }
+]
