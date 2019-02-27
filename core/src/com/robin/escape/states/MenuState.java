@@ -18,10 +18,10 @@ import java.util.ArrayList;
 public class MenuState extends State{
     private StyleManager styleManager;
     private GameObject background;
-    private Clickable statsButton;
+    //private Clickable statsButton;
     private Clickable playButton;
     private Clickable editorButton;
-    private Clickable shopButton;
+    //private Clickable shopButton;
     private Viewport viewport;
     private Vector3 mousePos;
     private boolean leftKeyDown = false;
@@ -40,9 +40,9 @@ public class MenuState extends State{
             editorButton.getPosition().x += playButton.getSprite().getTexture().getWidth();
             editorButton.getPosition().y += editorButton.getSprite().getTexture().getHeight();
         }
-        statsButton = new Clickable(new Vector3(playButton.getPosition().x + playButton.getSprite().getWidth(), escape.HEIGHT / 2, 0), styleManager.getStyle()+ "/button/statsbuttonUnPressed.png", styleManager.getStyle()+ "/button/statsbutton.png");
-        shopButton = new Clickable(new Vector3(playButton.getPosition().x, escape.HEIGHT / 2, 0), styleManager.getStyle()+ "/button/shopbuttonUnPressed.png", styleManager.getStyle()+ "/button/shopbutton.png");
-        shopButton.getPosition().x -= shopButton.getSprite().getTexture().getWidth();
+        //statsButton = new Clickable(new Vector3(playButton.getPosition().x + playButton.getSprite().getWidth(), escape.HEIGHT / 2, 0), styleManager.getStyle()+ "/button/statsbuttonUnPressed.png", styleManager.getStyle()+ "/button/statsbutton.png");
+        //shopButton = new Clickable(new Vector3(playButton.getPosition().x, escape.HEIGHT / 2, 0), styleManager.getStyle()+ "/button/shopbuttonUnPressed.png", styleManager.getStyle()+ "/button/shopbutton.png");
+        //shopButton.getPosition().x -= shopButton.getSprite().getTexture().getWidth();
 
         camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
         viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
@@ -107,10 +107,10 @@ public class MenuState extends State{
             viewport.unproject(mousePos);
             if(playButton.getBounds().contains(mousePos.x, mousePos.y)) {
                 playButton.setPressed(true);
-                shopButton.setPressed(false);
-                statsButton.setPressed(false);
+                //shopButton.setPressed(false);
+                //statsButton.setPressed(false);
             }
-            else if(shopButton.getBounds().contains(mousePos.x, mousePos.y)) {
+            /*else if(shopButton.getBounds().contains(mousePos.x, mousePos.y)) {
                 playButton.setPressed(false);
                 shopButton.setPressed(true);
                 statsButton.setPressed(false);
@@ -119,11 +119,11 @@ public class MenuState extends State{
                 playButton.setPressed(false);
                 shopButton.setPressed(false);
                 statsButton.setPressed(true);
-            }
+            }*/
             else{
                 playButton.setPressed(false);
-                shopButton.setPressed(false);
-                statsButton.setPressed(false);
+                //shopButton.setPressed(false);
+                //statsButton.setPressed(false);
             }
             if(Gdx.app.getType() == Application.ApplicationType.Desktop)
                 if(editorButton.getBounds().contains(mousePos.x, mousePos.y)){
@@ -137,14 +137,14 @@ public class MenuState extends State{
                     gsm.set(new LevelSelectionState(gsm));
                     dispose();
                 }
-                else if (shopButton.getBounds().contains(mousePos.x, mousePos.y)) {
+                /*else if (shopButton.getBounds().contains(mousePos.x, mousePos.y)) {
                     gsm.set(new ShopState(gsm));
                     dispose();
                 }
                 else if (statsButton.getBounds().contains(mousePos.x, mousePos.y)) {
                     gsm.set(new StatsState(gsm));
                     dispose();
-                }
+                }*/
                 if(Gdx.app.getType() == Application.ApplicationType.Desktop)
                     if(editorButton.getBounds().contains(mousePos.x, mousePos.y)){
                         gsm.set(new EditorState(gsm));
@@ -167,8 +167,8 @@ public class MenuState extends State{
         sb.begin();
         sb.draw(background.getSprite(), 0, 0);
         playButton.render(sb);
-        shopButton.render(sb);
-        statsButton.render(sb);
+        //shopButton.render(sb);
+        //statsButton.render(sb);
         if(Gdx.app.getType() == Application.ApplicationType.Desktop)
             editorButton.render(sb);
         sb.end();
@@ -181,7 +181,7 @@ public class MenuState extends State{
         if(Gdx.app.getType() == Application.ApplicationType.Desktop)
             editorButton.getSprite().getTexture().dispose();
 
-        shopButton.getSprite().getTexture().dispose();
-        statsButton.getSprite().getTexture().dispose();
+        //shopButton.getSprite().getTexture().dispose();
+        //statsButton.getSprite().getTexture().dispose();
     }
 }
