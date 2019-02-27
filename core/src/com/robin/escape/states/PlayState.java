@@ -95,7 +95,7 @@ public class PlayState extends State {
         winMusic = Gdx.audio.newMusic(Gdx.files.internal("winTHEME.ogg"));
         penguinMusic.setLooping(true);
         penguinMusic.play();
-        penguinMusic.setVolume(0.1f);
+        penguinMusic.setVolume(1.0f);
 
 
         levelManager = new LevelManager();
