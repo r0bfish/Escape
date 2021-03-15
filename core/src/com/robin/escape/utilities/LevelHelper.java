@@ -36,6 +36,10 @@ public class LevelHelper {
         map.put("levels/level28.json", "levels/level29.json");
     }
 
+    public static Boolean isFinalLevel(String level) {
+        return level.equals("levels/level21.json");
+    }
+
     public static String getNextLevel(String currentLevel){
         return map.get(currentLevel);}
 }

@@ -15,6 +15,7 @@ import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.robin.escape.escape;
@@ -108,7 +109,7 @@ public class PlayState extends State {
 
         camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
         CameraStyles.lockOnTarget(camera, player.getPosition());
-        viewport = new StretchViewport(escape.WIDTH/7*4, escape.HEIGHT/7*4, camera);
+        viewport = new ExtendViewport(escape.WIDTH/7*4, escape.HEIGHT/7*4, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         camRect = new Rectangle(camera.position.x - camera.viewportWidth,camera.position.y - camera.viewportHeight,camera.viewportWidth * 2,camera.viewportHeight * 2);
@@ -216,7 +217,12 @@ public class PlayState extends State {
                 if(pausedGame) {
                     if (scoreHud.getButton(ScoreHud.BUTTON.NEXT).getBounds().contains(secondMousePos.x, secondMousePos.y)) {
                         mousePos.setZero();
-                        gsm.push(new PlayState(gsm, LevelHelper.getNextLevel(levelManager.getLevelName())));
+                        String nextLevel = LevelHelper.getNextLevel(levelManager.getLevelName());
+                        if (LevelHelper.isFinalLevel(nextLevel)) {
+                            gsm.push(new MenuState(gsm));
+                        } else {
+                            gsm.push(new PlayState(gsm, LevelHelper.getNextLevel(levelManager.getLevelName())));
+                        }
                     } else if (scoreHud.getButton(ScoreHud.BUTTON.MENU).getBounds().contains(secondMousePos.x, secondMousePos.y)) {
                         mousePos.setZero();
                         gsm.push(new MenuState(gsm));
@@ -640,7 +646,7 @@ public class PlayState extends State {
         }
         else {
             levelManager.getTilesetManager().render(sb);
-            player.getSkidmarkManager().render(sb);
+            //player.getSkidmarkManager().render(sb);
         }
         for (int i = 0; i < notSorted.size(); i++)
             notSorted.get(i).render(sb);

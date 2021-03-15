@@ -29,7 +29,7 @@ public class LevelSelectionState extends State{
     private GameObject background;
     private ArrayList<ButtonMeny> buttons1;
     private ArrayList<ButtonMeny> buttons2;
-    private ArrayList<ButtonMeny> buttons3;
+    // private ArrayList<ButtonMeny> buttons3;
     private int state = 0;
     private Clickable btnReturn;
     private Clickable btnLeft;
@@ -80,20 +80,20 @@ public class LevelSelectionState extends State{
         buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level18.json", 0), prefs.getBoolean("levels/level17.json", false), "Level: 2.8", "levels/level18.json"));
         buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level19.json", 0), prefs.getBoolean("levels/level18.json", false), "Level: 2.9", "levels/level19.json"));
 
-        buttons3 = new ArrayList<>();
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level21.json", 0), prefs.getBoolean("levels/level19.json", false), "Level: 3.1", "levels/level21.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level22.json", 0), prefs.getBoolean("levels/level21.json", false), "Level: 3.2", "levels/level22.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level23.json", 0), prefs.getBoolean("levels/level22.json", false), "Level: 3.3", "levels/level23.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level24.json", 0), prefs.getBoolean("levels/level23.json", false), "Level: 3.4", "levels/level24.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level25.json", 0), prefs.getBoolean("levels/level24.json", false), "Level: 3.5", "levels/level25.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level26.json", 0), prefs.getBoolean("levels/level25.json", false), "Level: 3.6", "levels/level26.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level27.json", 0), prefs.getBoolean("levels/level26.json", false), "Level: 3.7", "levels/level27.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level28.json", 0), prefs.getBoolean("levels/level27.json", false), "Level: 3.8", "levels/level28.json"));
-        buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level29.json", 0), prefs.getBoolean("levels/level28.json", false), "Level: 3.9", "levels/level29.json"));
+        // buttons3 = new ArrayList<>();
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level21.json", 0), prefs.getBoolean("levels/level19.json", false), "Level: 3.1", "levels/level21.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level22.json", 0), prefs.getBoolean("levels/level21.json", false), "Level: 3.2", "levels/level22.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level23.json", 0), prefs.getBoolean("levels/level22.json", false), "Level: 3.3", "levels/level23.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level24.json", 0), prefs.getBoolean("levels/level23.json", false), "Level: 3.4", "levels/level24.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level25.json", 0), prefs.getBoolean("levels/level24.json", false), "Level: 3.5", "levels/level25.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level26.json", 0), prefs.getBoolean("levels/level25.json", false), "Level: 3.6", "levels/level26.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level27.json", 0), prefs.getBoolean("levels/level26.json", false), "Level: 3.7", "levels/level27.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level28.json", 0), prefs.getBoolean("levels/level27.json", false), "Level: 3.8", "levels/level28.json"));
+        // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level29.json", 0), prefs.getBoolean("levels/level28.json", false), "Level: 3.9", "levels/level29.json"));
 
         for(ButtonMeny bm : buttons1) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
         for(ButtonMeny bm : buttons2) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
-        for(ButtonMeny bm : buttons3) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
+        // for(ButtonMeny bm : buttons3) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
 
         background = new GameObject(new Vector3(0,0,0), styleManager.getStyle() + "/levelselect.png");
         btnReturn = new Clickable(new Vector3(3 * escape.WIDTH/6, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
@@ -188,7 +188,7 @@ public class LevelSelectionState extends State{
                         for (ButtonMeny bm : buttons2)
                             bm.setPressed(false);
                     break;
-                case 2:
+                /*case 2:
                     for(ButtonMeny bm : buttons3) {
                         if (bm.isTouched(mousePos.x, mousePos.y)) {
                             pressed = true;
@@ -200,7 +200,7 @@ public class LevelSelectionState extends State{
                     if(!pressed)
                         for (ButtonMeny bm : buttons3)
                             bm.setPressed(false);
-                    break;
+                    break;*/
             }
             if (btnReturn.getBounds().contains(mousePos.x, mousePos.y)) {
                 btnReturn.setPressed(true);
@@ -224,8 +224,8 @@ public class LevelSelectionState extends State{
                 bm.setPressed(false);
             for(ButtonMeny bm : buttons2)
                 bm.setPressed(false);
-            for(ButtonMeny bm : buttons3)
-                bm.setPressed(false);
+            // for(ButtonMeny bm : buttons3)
+            //     bm.setPressed(false);
             btnReturn.setPressed(false);
             btnLeft.setPressed(false);
             btnRight.setPressed(false);
@@ -241,11 +241,11 @@ public class LevelSelectionState extends State{
                             if (bm.isTouched(mousePos.x, mousePos.y))
                                 gsm.push(new PlayState(gsm, bm.getLevel()));
                         break;
-                    case 2:
+                    /*case 2:
                         for(ButtonMeny bm : buttons3)
                             if (bm.isTouched(mousePos.x, mousePos.y))
                                 gsm.push(new PlayState(gsm, bm.getLevel()));
-                        break;
+                        break;*/
                 }
 
                 if (btnReturn.getBounds().contains(mousePos.x, mousePos.y)) {
@@ -260,7 +260,7 @@ public class LevelSelectionState extends State{
                 } else if (btnRight.getBounds().contains(mousePos.x, mousePos.y)) {
                     state += 1;
                     mousePos.setZero();
-                    if(state > 2) state = 2;
+                    if(state > 1) state = 1;
                     prefs.putInteger("levelSelectionState", state);
                     prefs.flush();
                 }
@@ -277,10 +277,10 @@ public class LevelSelectionState extends State{
             bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
             bm.updateBounds();
         }
-        for (ButtonMeny bm : buttons3) {
-            bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
-            bm.updateBounds();
-        }
+        // for (ButtonMeny bm : buttons3) {
+        //     bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
+        //     bm.updateBounds();
+        // }
     }
 
         @Override
@@ -301,8 +301,8 @@ public class LevelSelectionState extends State{
             bm.render(sb);
         for(ButtonMeny bm : buttons2)
             bm.render(sb);
-        for(ButtonMeny bm : buttons3)
-            bm.render(sb);
+        // for(ButtonMeny bm : buttons3)
+        //     bm.render(sb);
 
         btnReturn.render(sb);
         btnLeft.render(sb);
@@ -318,8 +318,8 @@ public class LevelSelectionState extends State{
             bm.dispose();
         for(ButtonMeny bm : buttons2)
             bm.dispose();
-        for(ButtonMeny bm : buttons3)
-            bm.dispose();
+        // for(ButtonMeny bm : buttons3)
+        //     bm.dispose();
         btnReturn.getSprite().getTexture().dispose();
         btnRight.getSprite().getTexture().dispose();
         font.dispose();

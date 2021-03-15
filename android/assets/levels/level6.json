@@ -3217,34 +3217,6 @@
       },
       {
         "attr": "NORMAL",
-        "worldX": 224,
-        "worldY": 448,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 256,
-        "worldY": 448,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 288,
-        "worldY": 448,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 320,
-        "worldY": 448,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
         "worldX": 352,
         "worldY": 448,
         "textureX": 80,
@@ -3325,41 +3297,6 @@
         "worldX": 704,
         "worldY": 448,
         "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 208,
-        "worldY": 448,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 240,
-        "worldY": 448,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 272,
-        "worldY": 448,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 304,
-        "worldY": 448,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 336,
-        "worldY": 448,
-        "textureX": 96,
         "textureY": 96
       },
       {
@@ -3903,41 +3840,6 @@
       },
       {
         "attr": "NORMAL",
-        "worldX": 240,
-        "worldY": 560,
-        "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 208,
-        "worldY": 560,
-        "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 272,
-        "worldY": 560,
-        "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 304,
-        "worldY": 560,
-        "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 336,
-        "worldY": 560,
-        "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
         "worldX": 368,
         "worldY": 560,
         "textureX": 96,
@@ -4018,34 +3920,6 @@
         "worldX": 720,
         "worldY": 560,
         "textureX": 96,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 224,
-        "worldY": 560,
-        "textureX": 80,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 256,
-        "worldY": 560,
-        "textureX": 80,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 288,
-        "worldY": 560,
-        "textureX": 80,
-        "textureY": 80
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 320,
-        "worldY": 560,
-        "textureX": 80,
         "textureY": 80
       },
       {
@@ -4470,41 +4344,6 @@
       },
       {
         "attr": "NORMAL",
-        "worldX": 256,
-        "worldY": 576,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 224,
-        "worldY": 576,
-        "textureX": 80,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 272,
-        "worldY": 576,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 240,
-        "worldY": 576,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
-        "worldX": 208,
-        "worldY": 576,
-        "textureX": 96,
-        "textureY": 96
-      },
-      {
-        "attr": "NORMAL",
         "worldX": 224,
         "worldY": 624,
         "textureX": 16,
@@ -4698,6 +4537,167 @@
         "worldY": 416,
         "textureX": 64,
         "textureY": 0
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 208,
+        "worldY": 576,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 240,
+        "worldY": 576,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 272,
+        "worldY": 576,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 256,
+        "worldY": 576,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 224,
+        "worldY": 576,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 256,
+        "worldY": 560,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 224,
+        "worldY": 560,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 208,
+        "worldY": 560,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 240,
+        "worldY": 560,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 272,
+        "worldY": 560,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 272,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 240,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 208,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 224,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 256,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 288,
+        "worldY": 560,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 288,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 320,
+        "worldY": 560,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 320,
+        "worldY": 448,
+        "textureX": 64,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 304,
+        "worldY": 560,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 304,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 336,
+        "worldY": 560,
+        "textureX": 48,
+        "textureY": 64
+      },
+      {
+        "attr": "NORMAL",
+        "worldX": 336,
+        "worldY": 448,
+        "textureX": 48,
+        "textureY": 64
       }
     ],
     "JSONprops": [
@@ -4943,15 +4943,6 @@
       },
       {
         "attr": "ENEMYSPAWN",
-        "worldX": 244,
-        "worldY": 451,
-        "width": 71,
-        "height": 120,
-        "textureX": 192,
-        "textureY": 0
-      },
-      {
-        "attr": "ENEMYSPAWN",
         "worldX": 637,
         "worldY": 453,
         "width": 84,
@@ -4996,30 +4987,30 @@
         "textureY": 0
       },
       {
-        "attr": "SLIDE",
-        "worldX": 207,
-        "worldY": 536,
-        "width": 82,
-        "height": 85,
-        "textureX": 16,
-        "textureY": 0
-      },
-      {
-        "attr": "SLIDE",
-        "worldX": 288,
-        "worldY": 539,
-        "width": 34,
-        "height": 35,
-        "textureX": 16,
-        "textureY": 0
-      },
-      {
         "attr": "NORMAL",
         "worldX": 207,
         "worldY": 622,
         "width": 110,
         "height": 82,
         "textureX": 48,
+        "textureY": 0
+      },
+      {
+        "attr": "SLIDE",
+        "worldX": 207,
+        "worldY": 516,
+        "width": 80,
+        "height": 106,
+        "textureX": 16,
+        "textureY": 0
+      },
+      {
+        "attr": "SLIDE",
+        "worldX": 287,
+        "worldY": 514,
+        "width": 52,
+        "height": 61,
+        "textureX": 16,
         "textureY": 0
       }
     ],
@@ -5051,20 +5042,16 @@
         "worldY": 183.44965,
         "patrolX": 0.0,
         "patrolY": 0.0
+      },
+      {
+        "type": "ENEMY",
+        "worldX": 544.0,
+        "worldY": 288.0,
+        "patrolX": 544.0,
+        "patrolY": 176.0
       }
     ],
     "JSONSpawn": [
-      {
-        "attr": "ENEMYSPAWN",
-        "worldX": 244,
-        "worldY": 451,
-        "width": 71,
-        "height": 120,
-        "textureX": 0,
-        "textureY": 0,
-        "amountEnemies": 2,
-        "spawnFreq": 0.7000000476837158
-      },
       {
         "attr": "ENEMYSPAWN",
         "worldX": 637,

@@ -6,6 +6,7 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.robin.escape.escape;
@@ -43,7 +44,7 @@ public class EditorState extends State {
         scrollDown = false;
 
         camera.setToOrtho(false, escape.WIDTH*2, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH *2, escape.HEIGHT, camera);
+        viewport = new ExtendViewport(escape.WIDTH *2, escape.HEIGHT, camera);
         Gdx.graphics.setWindowedMode(escape.WIDTH*2, escape.HEIGHT);
         viewport.apply();
     }
