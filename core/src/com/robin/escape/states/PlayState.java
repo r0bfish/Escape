@@ -5,34 +5,24 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.audio.Music;
-import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.graphics.profiling.GLProfiler;
-import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.robin.escape.escape;
 import com.robin.escape.huds.PlayHud;
 import com.robin.escape.huds.ScoreHud;
 import com.robin.escape.managers.EnemyManager;
 import com.robin.escape.managers.ObjectManager;
 import com.robin.escape.managers.PropsManager;
-import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.Area;
 import com.robin.escape.sprites.Clickable;
 import com.robin.escape.sprites.GameObject;
-import com.robin.escape.sprites.MovingObject;
 import com.robin.escape.sprites.Platform;
 import com.robin.escape.sprites.Player;
 import com.robin.escape.sprites.Props;
-import com.robin.escape.sprites.SkidMark;
 import com.robin.escape.sprites.Tile;
 import com.robin.escape.utilities.CameraStyles;
 import com.robin.escape.managers.LevelManager;
@@ -53,7 +43,7 @@ public class PlayState extends State {
     private Rectangle camRect;
     private Player player;
     private GameObject scoreBG;
-    private Viewport viewport;
+    private ExtendViewport viewport;
     private List<GameObject> zSortTiles;
     private List<GameObject> zSort;
     private List<GameObject> zNotSortedTiles;
@@ -109,7 +99,8 @@ public class PlayState extends State {
 
         camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
         CameraStyles.lockOnTarget(camera, player.getPosition());
-        viewport = new ExtendViewport(escape.WIDTH/7*4, escape.HEIGHT/7*4, camera);
+        camera.zoom = 0.6f;
+        viewport = new ExtendViewport(escape.WIDTH, escape.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         camRect = new Rectangle(camera.position.x - camera.viewportWidth,camera.position.y - camera.viewportHeight,camera.viewportWidth * 2,camera.viewportHeight * 2);
@@ -120,6 +111,16 @@ public class PlayState extends State {
 
     @Override
     public void resize(int width, int height) {
+        if (Gdx.app.getGraphics().getWidth() > Gdx.app.getGraphics().getHeight()) {
+            // Landscape
+            viewport.setMinWorldWidth(escape.HEIGHT);
+            viewport.setMinWorldHeight(escape.WIDTH);
+        } else {
+            // Portrait
+            viewport.setMinWorldWidth(escape.WIDTH);
+            viewport.setMinWorldHeight(escape.HEIGHT);
+        }
+
         viewport.update(width, height);
     }
 
@@ -646,7 +647,7 @@ public class PlayState extends State {
         }
         else {
             levelManager.getTilesetManager().render(sb);
-            //player.getSkidmarkManager().render(sb);
+            player.getSkidmarkManager().render(sb);
         }
         for (int i = 0; i < notSorted.size(); i++)
             notSorted.get(i).render(sb);
