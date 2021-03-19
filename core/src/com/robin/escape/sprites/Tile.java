@@ -1,11 +1,10 @@
 package com.robin.escape.sprites;
 
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 
 public class Tile extends GameObject{
     private Vector3 tilesetPos;
@@ -36,16 +35,16 @@ public class Tile extends GameObject{
     public Rectangle specialEditionBounds(){
         bounds.x = position.x-8;
         bounds.y = position.y-8;
-        bounds.width = escape.TILEWIDTH+16;
-        bounds.height = escape.TILEHEIGHT+16;
+        bounds.width = Game.TILEWIDTH+16;
+        bounds.height = Game.TILEHEIGHT+16;
         return bounds;
     }
 
     private void updateBounds(){
         bounds.x = position.x;
         bounds.y = position.y;
-        bounds.width = escape.TILEWIDTH;
-        bounds.height = escape.TILEHEIGHT;
+        bounds.width = Game.TILEWIDTH;
+        bounds.height = Game.TILEHEIGHT;
     }
 
     @Override
@@ -55,10 +54,10 @@ public class Tile extends GameObject{
     @Override
     public void render(SpriteBatch sb) {
         sb.draw(textureset.getTexture(), getWorldPos().x,getWorldPos().y,
-                (((int)getTilesetPos().x + escape.TILEWIDTH)/escape.TILEWIDTH) * (escape.TILEPADDING * ((((int)getTilesetPos().x + escape.WIDTH)/escape.WIDTH)))  + (int)getTilesetPos().x,
-                (((int)getTilesetPos().y + escape.TILEHEIGHT)/escape.TILEHEIGHT) * (escape.TILEPADDING * ((((int)getTilesetPos().y + escape.HEIGHT)/escape.HEIGHT)))  + (int)getTilesetPos().y,
-                escape.TILEWIDTH,
-                escape.TILEHEIGHT);
+                (((int)getTilesetPos().x + Game.TILEWIDTH)/ Game.TILEWIDTH) * (Game.TILEPADDING * ((((int)getTilesetPos().x + Game.WIDTH)/ Game.WIDTH)))  + (int)getTilesetPos().x,
+                (((int)getTilesetPos().y + Game.TILEHEIGHT)/ Game.TILEHEIGHT) * (Game.TILEPADDING * ((((int)getTilesetPos().y + Game.HEIGHT)/ Game.HEIGHT)))  + (int)getTilesetPos().y,
+                Game.TILEWIDTH,
+                Game.TILEHEIGHT);
 
         /*sb.draw(textureset.getTexture(), getWorldPos().x,getWorldPos().y,
                 escape.TILEPADDING + (int)getTilesetPos().x,

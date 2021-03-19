@@ -9,7 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.Clickable;
 import com.robin.escape.sprites.GameObject;
@@ -41,14 +41,14 @@ public class ShopState extends State{
         }
 
         background = new GameObject(new Vector3(0,0,0), styleManager.getStyle() + "/levelselect.png");
-        winter = new Clickable(new Vector3(3 * escape.WIDTH/6, 7*escape.HEIGHT/8 ,0), "bg/normalStyleUnPressed.png", "bg/normalStyle.png");
+        winter = new Clickable(new Vector3(3 * Game.WIDTH/6, 7* Game.HEIGHT/8 ,0), "bg/normalStyleUnPressed.png", "bg/normalStyle.png");
         winter.getPosition().x -= winter.getSprite().getTexture().getWidth()/2;
-        summer = new Clickable(new Vector3(3 * escape.WIDTH/6, winter.getPosition().y - winter.getSprite().getTexture().getHeight() ,0),"bg/rainbowStyleUnPressed.png",  "bg/rainbowStyle.png");
+        summer = new Clickable(new Vector3(3 * Game.WIDTH/6, winter.getPosition().y - winter.getSprite().getTexture().getHeight() ,0),"bg/rainbowStyleUnPressed.png",  "bg/rainbowStyle.png");
         summer.getPosition().x -= summer.getSprite().getTexture().getWidth()/2;
-        desert = new Clickable(new Vector3(3 * escape.WIDTH/6, summer.getPosition().y - summer.getSprite().getTexture().getHeight() ,0),"bg/desertStyleUnPressed.png",  "bg/desertStyle.png");
+        desert = new Clickable(new Vector3(3 * Game.WIDTH/6, summer.getPosition().y - summer.getSprite().getTexture().getHeight() ,0),"bg/desertStyleUnPressed.png",  "bg/desertStyle.png");
         desert.getPosition().x -= summer.getSprite().getTexture().getWidth()/2;
         lockedSummer = new Texture("bg/rainbowStyleLocked.png");
-        btnReturn = new Clickable(new Vector3(3 * escape.WIDTH/6, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
+        btnReturn = new Clickable(new Vector3(3 * Game.WIDTH/6, 4* Game.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
         btnReturn.getPosition().x -= btnReturn.getSprite().getTexture().getWidth()/2;
 
         if(prefs.getString("style", "normal").equals("normal")) {
@@ -67,8 +67,8 @@ public class ShopState extends State{
             desert.setPressed(true);
         }
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+        viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }

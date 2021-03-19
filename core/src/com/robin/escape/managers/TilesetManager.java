@@ -1,11 +1,9 @@
 package com.robin.escape.managers;
 
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.sprites.GameObject;
 import com.robin.escape.sprites.Tile;
 
@@ -57,8 +55,8 @@ public class TilesetManager {
     public void setFocused(boolean b){ isFocused = b;}
     private Tile tileExists(Vector3 mousePos){
         for(Tile t : tiles){
-            if(t.getWorldPos().x == (mousePos.x - (mousePos.x % escape.TILEWIDTH)))
-                if(t.getWorldPos().y == (mousePos.y - (mousePos.y % escape.TILEHEIGHT))){
+            if(t.getWorldPos().x == (mousePos.x - (mousePos.x % Game.TILEWIDTH)))
+                if(t.getWorldPos().y == (mousePos.y - (mousePos.y % Game.TILEHEIGHT))){
                     return t;
                 }
         }
@@ -81,12 +79,12 @@ public class TilesetManager {
 
         Tile tt = new Tile(
                 new Vector3(
-                        worldPos.x - (worldPos.x % escape.TILEWIDTH),
-                        worldPos.y - (worldPos.y % escape.TILEHEIGHT),
+                        worldPos.x - (worldPos.x % Game.TILEWIDTH),
+                        worldPos.y - (worldPos.y % Game.TILEHEIGHT),
                         0),
                 new Vector3(
-                        ((mousePos.x - (mousePos.x % escape.TILEWIDTH) - tileset.getPosition().x)),
-                        (tileset.getSprite().getTexture().getHeight() - escape.TILEHEIGHT - (mousePos.y - (mousePos.y % escape.TILEHEIGHT) - tileset.getPosition().y)),
+                        ((mousePos.x - (mousePos.x % Game.TILEWIDTH) - tileset.getPosition().x)),
+                        (tileset.getSprite().getTexture().getHeight() - Game.TILEHEIGHT - (mousePos.y - (mousePos.y % Game.TILEHEIGHT) - tileset.getPosition().y)),
                         0),
                 tileset.getSprite(),
                 attribute);
@@ -99,10 +97,10 @@ public class TilesetManager {
     public void render(SpriteBatch sb){
         for(int i=0; i<tiles.size(); i++)
             sb.draw(tileset.getSprite().getTexture(), tiles.get(i).getWorldPos().x,tiles.get(i).getWorldPos().y,
-                    (((int)tiles.get(i).getTilesetPos().x + escape.TILEWIDTH)/escape.TILEWIDTH) * (escape.TILEPADDING * ((((int)tiles.get(i).getTilesetPos().x + escape.WIDTH)/escape.WIDTH)))  + (int)tiles.get(i).getTilesetPos().x,
-                    (((int)tiles.get(i).getTilesetPos().y + escape.TILEHEIGHT)/escape.TILEHEIGHT) * (escape.TILEPADDING * ((((int)tiles.get(i).getTilesetPos().y + escape.HEIGHT)/escape.HEIGHT)))  + (int)tiles.get(i).getTilesetPos().y,
-                    escape.TILEWIDTH,
-                    escape.TILEHEIGHT);
+                    (((int)tiles.get(i).getTilesetPos().x + Game.TILEWIDTH)/ Game.TILEWIDTH) * (Game.TILEPADDING * ((((int)tiles.get(i).getTilesetPos().x + Game.WIDTH)/ Game.WIDTH)))  + (int)tiles.get(i).getTilesetPos().x,
+                    (((int)tiles.get(i).getTilesetPos().y + Game.TILEHEIGHT)/ Game.TILEHEIGHT) * (Game.TILEPADDING * ((((int)tiles.get(i).getTilesetPos().y + Game.HEIGHT)/ Game.HEIGHT)))  + (int)tiles.get(i).getTilesetPos().y,
+                    Game.TILEWIDTH,
+                    Game.TILEHEIGHT);
         /*for(Tile t : tiles){
             sb.draw(tileset.getSprite().getTexture(), t.getWorldPos().x,t.getWorldPos().y, (int)t.getTilesetPos().x, (int)t.getTilesetPos().y, escape.TILEWIDTH, escape.TILEHEIGHT);
         }*/

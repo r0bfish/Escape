@@ -9,7 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.Clickable;
 import com.robin.escape.sprites.GameObject;
@@ -34,11 +34,11 @@ public class StatsState extends State{
         font.setColor(0.392f, 0.675f, 0.808f, 1.0f);
 
         background = new GameObject(new Vector3(0,0,0), styleManager.getStyle() + "/levelselect.png");
-        btnReturn = new Clickable(new Vector3(3 * escape.WIDTH/6, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
+        btnReturn = new Clickable(new Vector3(3 * Game.WIDTH/6, 4* Game.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
         btnReturn.getPosition().x -= btnReturn.getSprite().getTexture().getWidth()/2;
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+        viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
@@ -121,7 +121,7 @@ public class StatsState extends State{
         btnReturn.render(sb);
         font.draw(sb, "Total jumps: " +  prefs.getInteger("totalJumps", 0) +
                 "\nTotal restarts: " + prefs.getInteger("totalRestarts", 0),
-                2 * escape.WIDTH/7, 7*escape.HEIGHT/8);
+                2 * Game.WIDTH/7, 7* Game.HEIGHT/8);
         sb.end();
     }
 

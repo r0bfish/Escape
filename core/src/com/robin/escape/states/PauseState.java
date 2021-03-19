@@ -1,15 +1,13 @@
 package com.robin.escape.states;
 
-import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.managers.LevelManager;
 import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.Clickable;
@@ -40,14 +38,14 @@ public class PauseState extends State {
         font.setColor(1.0f, 1.0f, 1.0f, 1.0f);
 
         background = new GameObject(new Vector3(0,0,0), "pausemeny.png");
-        replayButton = new Clickable(new Vector3(escape.WIDTH/2, 10,0), styleManager.getStyle()+ "/button/replaybuttonUnPressed.png", styleManager.getStyle()+ "/button/replaybutton.png");
+        replayButton = new Clickable(new Vector3(Game.WIDTH/2, 10,0), styleManager.getStyle()+ "/button/replaybuttonUnPressed.png", styleManager.getStyle()+ "/button/replaybutton.png");
         replayButton.getPosition().x -= replayButton.getSprite().getTexture().getWidth()/2;
-        continueButton = new Clickable(new Vector3(escape.WIDTH/2 + replayButton.getBounds().width / 2, 10,0), styleManager.getStyle()+ "/button/continueUnPressed.png", styleManager.getStyle()+ "/button/continue.png");
+        continueButton = new Clickable(new Vector3(Game.WIDTH/2 + replayButton.getBounds().width / 2, 10,0), styleManager.getStyle()+ "/button/continueUnPressed.png", styleManager.getStyle()+ "/button/continue.png");
         menuButton = new Clickable(new Vector3(replayButton.getPosition().x, 10,0), styleManager.getStyle()+ "/button/menubuttonUnPressed.png", styleManager.getStyle()+ "/button/menubutton.png");
         menuButton.getPosition().x -= menuButton.getSprite().getTexture().getWidth();
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+        viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
@@ -167,7 +165,7 @@ public class PauseState extends State {
         //replayButton.render(sb);
         menuButton.render(sb);
 
-        font.draw(sb, pausedString, 100, escape.HEIGHT/2);
+        font.draw(sb, pausedString, 100, Game.HEIGHT/2);
 
         sb.end();
     }

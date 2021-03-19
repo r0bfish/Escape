@@ -8,12 +8,10 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.Clickable;
 import com.robin.escape.sprites.GameObject;
-
-import java.util.ArrayList;
 
 public class MenuState extends State{
     private StyleManager styleManager;
@@ -33,10 +31,10 @@ public class MenuState extends State{
         styleManager = new StyleManager();
 
         background = new GameObject(new Vector3(0,0,0), styleManager.getStyle()+ "/mainmeny.png");
-        playButton = new Clickable(new Vector3(3 * escape.WIDTH/6, escape.HEIGHT/2,0), styleManager.getStyle()+ "/button/playbuttonUnPressed.png", styleManager.getStyle()+ "/button/playbutton.png");
+        playButton = new Clickable(new Vector3(3 * Game.WIDTH/6, Game.HEIGHT/2,0), styleManager.getStyle()+ "/button/playbuttonUnPressed.png", styleManager.getStyle()+ "/button/playbutton.png");
         playButton.getPosition().x -= playButton.getSprite().getTexture().getWidth()/2;
         if(Gdx.app.getType() == Application.ApplicationType.Desktop) {
-            editorButton = new Clickable(new Vector3(playButton.getPosition().x, escape.HEIGHT / 2, 0),styleManager.getStyle()+ "/button/editorbuttonUnPressed.png", styleManager.getStyle()+ "/button/editorbutton.png");
+            editorButton = new Clickable(new Vector3(playButton.getPosition().x, Game.HEIGHT / 2, 0),styleManager.getStyle()+ "/button/editorbuttonUnPressed.png", styleManager.getStyle()+ "/button/editorbutton.png");
             editorButton.getPosition().x += playButton.getSprite().getTexture().getWidth();
             editorButton.getPosition().y += editorButton.getSprite().getTexture().getHeight();
         }
@@ -44,8 +42,8 @@ public class MenuState extends State{
         //shopButton = new Clickable(new Vector3(playButton.getPosition().x, escape.HEIGHT / 2, 0), styleManager.getStyle()+ "/button/shopbuttonUnPressed.png", styleManager.getStyle()+ "/button/shopbutton.png");
         //shopButton.getPosition().x -= shopButton.getSprite().getTexture().getWidth();
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+        viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 

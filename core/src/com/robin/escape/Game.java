@@ -9,7 +9,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 import com.robin.escape.states.GameStateManager;
 import com.robin.escape.states.MenuState;
 
-public class escape extends ApplicationAdapter {
+public class Game extends ApplicationAdapter {
 	public static final int WIDTH = 480;
 	public static final int HEIGHT = 800;
 

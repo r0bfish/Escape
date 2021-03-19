@@ -9,7 +9,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.huds.EditorHud;
 import com.robin.escape.managers.LevelManager;
 import com.robin.escape.managers.ObjectManager;
@@ -43,9 +43,9 @@ public class EditorState extends State {
         rightKeyDown = false;
         scrollDown = false;
 
-        camera.setToOrtho(false, escape.WIDTH*2, escape.HEIGHT);
-        viewport = new ExtendViewport(escape.WIDTH *2, escape.HEIGHT, camera);
-        Gdx.graphics.setWindowedMode(escape.WIDTH*2, escape.HEIGHT);
+        camera.setToOrtho(false, Game.WIDTH*2, Game.HEIGHT);
+        viewport = new ExtendViewport(Game.WIDTH *2, Game.HEIGHT, camera);
+        Gdx.graphics.setWindowedMode(Game.WIDTH*2, Game.HEIGHT);
         viewport.apply();
     }
 
@@ -170,9 +170,9 @@ public class EditorState extends State {
                 selectedGameobject = null;
             }
             else if(hud.getButton(EditorHud.BUTTON.RETURN).getBounds().contains(mousePos.x, mousePos.y)){
-                camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-                viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
-                Gdx.graphics.setWindowedMode(escape.WIDTH, escape.HEIGHT);
+                camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+                viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
+                Gdx.graphics.setWindowedMode(Game.WIDTH, Game.HEIGHT);
                 viewport.apply();
                 gsm.set(new MenuState(gsm));
             }
@@ -222,8 +222,8 @@ public class EditorState extends State {
                 levelManager.addOnLevel(mousePos, null);
             else
                 ((Enemy)selectedGameobject).patrol(selectedGameobject.getPosition(),
-                        new Vector3((mousePos.x - (mousePos.x % escape.TILEWIDTH)),
-                                (mousePos.y - (mousePos.y % escape.TILEWIDTH)),
+                        new Vector3((mousePos.x - (mousePos.x % Game.TILEWIDTH)),
+                                (mousePos.y - (mousePos.y % Game.TILEWIDTH)),
                                 0));
         }
         else if(scrollDown){
@@ -236,7 +236,7 @@ public class EditorState extends State {
                     for(GameObject a : levelManager.getTilesetManager().getTiles())
                         if(Collision.isPointBoundDetected(mousePos, new Rectangle(
                                 a.getPosition().x, a.getPosition().y,
-                                escape.TILEWIDTH, escape.TILEHEIGHT
+                                Game.TILEWIDTH, Game.TILEHEIGHT
                                 ))) {
                             levelManager.getTilesetManager().getTiles().remove(a);
                             break;

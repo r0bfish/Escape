@@ -1,25 +1,20 @@
 package com.robin.escape.states;
 
 
-import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.profiling.GLProfiler;
-import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.utils.FloatArray;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.managers.StyleManager;
 import com.robin.escape.sprites.ButtonMeny;
 import com.robin.escape.sprites.Clickable;
 import com.robin.escape.sprites.GameObject;
-import com.robin.escape.utilities.FontHandler;
 
 import java.util.ArrayList;
 
@@ -59,26 +54,26 @@ public class LevelSelectionState extends State{
         Texture star = new Texture("star.png");
 
         buttons1 = new ArrayList<>();
-        buttons1.add(new ButtonMeny(new Vector3(1 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level1.json", 0),                                          true, "Level: 1.1", "levels/level1.json"));
-        buttons1.add(new ButtonMeny(new Vector3(3 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level2.json", 0), prefs.getBoolean("levels/level1.json", false), "Level: 1.2", "levels/level2.json"));
-        buttons1.add(new ButtonMeny(new Vector3(5 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level3.json", 0), prefs.getBoolean("levels/level2.json", false), "Level: 1.3", "levels/level3.json"));
-        buttons1.add(new ButtonMeny(new Vector3(1 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level4.json", 0), prefs.getBoolean("levels/level3.json", false), "Level: 1.4", "levels/level4.json"));
-        buttons1.add(new ButtonMeny(new Vector3(3 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level5.json", 0), prefs.getBoolean("levels/level4.json", false), "Level: 1.5", "levels/level5.json"));
-        buttons1.add(new ButtonMeny(new Vector3(5 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level6.json", 0), prefs.getBoolean("levels/level5.json", false), "Level: 1.6", "levels/level6.json"));
-        buttons1.add(new ButtonMeny(new Vector3(1 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level7.json", 0), prefs.getBoolean("levels/level6.json", false), "Level: 1.7", "levels/level7.json"));
-        buttons1.add(new ButtonMeny(new Vector3(3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level8.json", 0), prefs.getBoolean("levels/level7.json", false), "Level: 1.8", "levels/level8.json"));
-        buttons1.add(new ButtonMeny(new Vector3(5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level9.json", 0), prefs.getBoolean("levels/level8.json", false), "Level: 1.9", "levels/level9.json"));
+        buttons1.add(new ButtonMeny(new Vector3(1 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level1.json", 0),                                          true, "Level: 1.1", "levels/level1.json"));
+        buttons1.add(new ButtonMeny(new Vector3(3 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level2.json", 0), prefs.getBoolean("levels/level1.json", false), "Level: 1.2", "levels/level2.json"));
+        buttons1.add(new ButtonMeny(new Vector3(5 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level3.json", 0), prefs.getBoolean("levels/level2.json", false), "Level: 1.3", "levels/level3.json"));
+        buttons1.add(new ButtonMeny(new Vector3(1 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level4.json", 0), prefs.getBoolean("levels/level3.json", false), "Level: 1.4", "levels/level4.json"));
+        buttons1.add(new ButtonMeny(new Vector3(3 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level5.json", 0), prefs.getBoolean("levels/level4.json", false), "Level: 1.5", "levels/level5.json"));
+        buttons1.add(new ButtonMeny(new Vector3(5 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level6.json", 0), prefs.getBoolean("levels/level5.json", false), "Level: 1.6", "levels/level6.json"));
+        buttons1.add(new ButtonMeny(new Vector3(1 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level7.json", 0), prefs.getBoolean("levels/level6.json", false), "Level: 1.7", "levels/level7.json"));
+        buttons1.add(new ButtonMeny(new Vector3(3 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level8.json", 0), prefs.getBoolean("levels/level7.json", false), "Level: 1.8", "levels/level8.json"));
+        buttons1.add(new ButtonMeny(new Vector3(5 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressed, btnUnlocked, btnLocked, star, font, prefs.getInteger("starlevels/level9.json", 0), prefs.getBoolean("levels/level8.json", false), "Level: 1.9", "levels/level9.json"));
 
         buttons2 = new ArrayList<>();
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 1 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level11.json", 0), prefs.getBoolean("levels/level9.json" , false), "Level: 2.1", "levels/level11.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 3 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level12.json", 0), prefs.getBoolean("levels/level11.json", false), "Level: 2.2", "levels/level12.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 5 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level13.json", 0), prefs.getBoolean("levels/level12.json", false), "Level: 2.3", "levels/level13.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 1 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level14.json", 0), prefs.getBoolean("levels/level13.json", false), "Level: 2.4", "levels/level14.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 3 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level15.json", 0), prefs.getBoolean("levels/level14.json", false), "Level: 2.5", "levels/level15.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 5 * escape.WIDTH/6, 6*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level16.json", 0), prefs.getBoolean("levels/level15.json", false), "Level: 2.6", "levels/level16.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 1 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level17.json", 0), prefs.getBoolean("levels/level16.json", false), "Level: 2.7", "levels/level17.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level18.json", 0), prefs.getBoolean("levels/level17.json", false), "Level: 2.8", "levels/level18.json"));
-        buttons2.add(new ButtonMeny(new Vector3(escape.WIDTH+ 5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level19.json", 0), prefs.getBoolean("levels/level18.json", false), "Level: 2.9", "levels/level19.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 1 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level11.json", 0), prefs.getBoolean("levels/level9.json" , false), "Level: 2.1", "levels/level11.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 3 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level12.json", 0), prefs.getBoolean("levels/level11.json", false), "Level: 2.2", "levels/level12.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 5 * Game.WIDTH/6, 7* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level13.json", 0), prefs.getBoolean("levels/level12.json", false), "Level: 2.3", "levels/level13.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 1 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level14.json", 0), prefs.getBoolean("levels/level13.json", false), "Level: 2.4", "levels/level14.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 3 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level15.json", 0), prefs.getBoolean("levels/level14.json", false), "Level: 2.5", "levels/level15.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 5 * Game.WIDTH/6, 6* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level16.json", 0), prefs.getBoolean("levels/level15.json", false), "Level: 2.6", "levels/level16.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 1 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level17.json", 0), prefs.getBoolean("levels/level16.json", false), "Level: 2.7", "levels/level17.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 3 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level18.json", 0), prefs.getBoolean("levels/level17.json", false), "Level: 2.8", "levels/level18.json"));
+        buttons2.add(new ButtonMeny(new Vector3(Game.WIDTH+ 5 * Game.WIDTH/6, 5* Game.HEIGHT/8,0) , btnUnPressedPurp, btnUnlockedPurp, btnLocked, star, font, prefs.getInteger("starlevels/level19.json", 0), prefs.getBoolean("levels/level18.json", false), "Level: 2.9", "levels/level19.json"));
 
         // buttons3 = new ArrayList<>();
         // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 1 * escape.WIDTH/6, 7*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level21.json", 0), prefs.getBoolean("levels/level19.json", false), "Level: 3.1", "levels/level21.json"));
@@ -91,19 +86,19 @@ public class LevelSelectionState extends State{
         // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 3 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level28.json", 0), prefs.getBoolean("levels/level27.json", false), "Level: 3.8", "levels/level28.json"));
         // buttons3.add(new ButtonMeny(new Vector3((2 * escape.WIDTH)+ 5 * escape.WIDTH/6, 5*escape.HEIGHT/8,0) , btnUnPressedPink, btnUnlockedPink, btnLocked, star, font, prefs.getInteger("starlevels/level29.json", 0), prefs.getBoolean("levels/level28.json", false), "Level: 3.9", "levels/level29.json"));
 
-        for(ButtonMeny bm : buttons1) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
-        for(ButtonMeny bm : buttons2) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
+        for(ButtonMeny bm : buttons1) bm.getPosition().x += (((-Game.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
+        for(ButtonMeny bm : buttons2) bm.getPosition().x += (((-Game.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
         // for(ButtonMeny bm : buttons3) bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 1.0f;
 
         background = new GameObject(new Vector3(0,0,0), styleManager.getStyle() + "/levelselect.png");
-        btnReturn = new Clickable(new Vector3(3 * escape.WIDTH/6, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
+        btnReturn = new Clickable(new Vector3(3 * Game.WIDTH/6, 4* Game.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/menyReturnUnPressed.png", styleManager.getStyle()+ "/button/menyReturn.png");
         btnReturn.getPosition().x -= btnReturn.getSprite().getTexture().getWidth()/2;
-        btnLeft = new Clickable(new Vector3(btnReturn.getPosition().x, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/arrowLeftUnPressed.png", styleManager.getStyle()+ "/button/arrowLeft.png");
+        btnLeft = new Clickable(new Vector3(btnReturn.getPosition().x, 4* Game.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/arrowLeftUnPressed.png", styleManager.getStyle()+ "/button/arrowLeft.png");
         btnLeft.getPosition().x -= btnLeft.getBounds().width;
-        btnRight = new Clickable(new Vector3(btnReturn.getPosition().x + btnReturn.getBounds().width, 4*escape.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/arrowRightUnPressed.png", styleManager.getStyle()+ "/button/arrowRight.png");
+        btnRight = new Clickable(new Vector3(btnReturn.getPosition().x + btnReturn.getBounds().width, 4* Game.HEIGHT/8 ,0), styleManager.getStyle()+ "/button/arrowRightUnPressed.png", styleManager.getStyle()+ "/button/arrowRight.png");
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
-        viewport = new StretchViewport(escape.WIDTH, escape.HEIGHT, camera);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
+        viewport = new StretchViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
         resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
@@ -270,11 +265,11 @@ public class LevelSelectionState extends State{
 
     public void transition() {
         for (ButtonMeny bm : buttons1) {
-            bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
+            bm.getPosition().x += (((-Game.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
             bm.updateBounds();
         }
         for (ButtonMeny bm : buttons2) {
-            bm.getPosition().x += (((-escape.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
+            bm.getPosition().x += (((-Game.WIDTH * state) + (bm.getLayoutPosition().x) - bm.getPosition().x)) * 0.15f;
             bm.updateBounds();
         }
         // for (ButtonMeny bm : buttons3) {

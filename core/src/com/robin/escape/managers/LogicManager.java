@@ -1,13 +1,11 @@
 package com.robin.escape.managers;
 
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.sprites.Area;
 import com.robin.escape.sprites.GameObject;
-import com.robin.escape.sprites.Tile;
 
 import java.util.ArrayList;
 
@@ -37,7 +35,7 @@ public class LogicManager {
     }
     public void setSelected(Vector3 mousePos){
         this.mousePos = mousePos;
-        switch ((int)(Math.abs(logicset.getPosition().x - (mousePos.x - (mousePos.x % escape.TILEWIDTH)))/ escape.TILEWIDTH)){
+        switch ((int)(Math.abs(logicset.getPosition().x - (mousePos.x - (mousePos.x % Game.TILEWIDTH)))/ Game.TILEWIDTH)){
             case 0:
                 selectedAttribute = TilesetManager.ATTRIBUTE.KILL;
                 break;
@@ -82,8 +80,8 @@ public class LogicManager {
     public void setFocused(boolean b){ isFocused = b;}
     private Area logicAreaExists(Vector3 mousePos){
         for(Area a : logicAreas){
-            if(a.getPosition().x == (mousePos.x - (mousePos.x % escape.TILEWIDTH)))
-                if(a.getPosition().y == (mousePos.y - (mousePos.y % escape.TILEHEIGHT))){
+            if(a.getPosition().x == (mousePos.x - (mousePos.x % Game.TILEWIDTH)))
+                if(a.getPosition().y == (mousePos.y - (mousePos.y % Game.TILEHEIGHT))){
                     return a;
                 }
         }
@@ -100,8 +98,8 @@ public class LogicManager {
                 worldPos,
                 size,
                 new Vector3(
-                        ((mousePos.x - (mousePos.x % escape.TILEWIDTH) - logicset.getPosition().x)),
-                        (logicset.getSprite().getTexture().getHeight() - escape.TILEHEIGHT - (mousePos.y - (mousePos.y % escape.TILEHEIGHT) - logicset.getPosition().y)),
+                        ((mousePos.x - (mousePos.x % Game.TILEWIDTH) - logicset.getPosition().x)),
+                        (logicset.getSprite().getTexture().getHeight() - Game.TILEHEIGHT - (mousePos.y - (mousePos.y % Game.TILEHEIGHT) - logicset.getPosition().y)),
                         0),
                 selectedAttribute);
         //Gdx.app.log("" + tt.getWorldPos(), "" + tt.getTilesetPos());

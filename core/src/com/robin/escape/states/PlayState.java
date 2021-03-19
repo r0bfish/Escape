@@ -8,10 +8,9 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.huds.PlayHud;
 import com.robin.escape.huds.ScoreHud;
 import com.robin.escape.managers.EnemyManager;
@@ -64,7 +63,7 @@ public class PlayState extends State {
 
     public PlayState(GameStateManager gsm, String level) {
         super(gsm);
-        pauseButton = new Clickable(new Vector3(escape.WIDTH - 38,escape.HEIGHT - 38,0), "navigation.png", "navigation.png");
+        pauseButton = new Clickable(new Vector3(Game.WIDTH - 38, Game.HEIGHT - 38,0), "navigation.png", "navigation.png");
 
         scoreBG = new GameObject(new Vector3(0,0,0), "scoreBG.png");
         font = new BitmapFont(Gdx.files.internal("font/GillSans.fnt"), Gdx.files.internal("font/GillSans.png"), false);
@@ -97,28 +96,29 @@ public class PlayState extends State {
         zNotSortedTiles = new ArrayList<>();
         notSorted = new ArrayList<>();
 
-        camera.setToOrtho(false, escape.WIDTH, escape.HEIGHT);
+        camera.setToOrtho(false, Game.WIDTH, Game.HEIGHT);
         CameraStyles.lockOnTarget(camera, player.getPosition());
         camera.zoom = 0.6f;
-        viewport = new ExtendViewport(escape.WIDTH, escape.HEIGHT, camera);
+        viewport = new ExtendViewport(Game.WIDTH, Game.HEIGHT, camera);
         viewport.apply();
-        resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         camRect = new Rectangle(camera.position.x - camera.viewportWidth,camera.position.y - camera.viewportHeight,camera.viewportWidth * 2,camera.viewportHeight * 2);
 
         playHud = new PlayHud(levelManager.getStarTimes(), camera);
         scoreHud = new ScoreHud(levelManager.getStarTimes(), camera);
+
+        resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
     }
 
     @Override
     public void resize(int width, int height) {
         if (Gdx.app.getGraphics().getWidth() > Gdx.app.getGraphics().getHeight()) {
             // Landscape
-            viewport.setMinWorldWidth(escape.HEIGHT);
-            viewport.setMinWorldHeight(escape.WIDTH);
+            viewport.setMinWorldWidth(Game.HEIGHT);
+            viewport.setMinWorldHeight(Game.WIDTH);
         } else {
             // Portrait
-            viewport.setMinWorldWidth(escape.WIDTH);
-            viewport.setMinWorldHeight(escape.HEIGHT);
+            viewport.setMinWorldWidth(Game.WIDTH);
+            viewport.setMinWorldHeight(Game.HEIGHT);
         }
 
         viewport.update(width, height);
@@ -179,7 +179,7 @@ public class PlayState extends State {
     public void inputActions(){
         if(leftKeyDown) {
             camera.unproject(mousePos.set(Gdx.input.getX(), Gdx.input.getY(), 0));
-            CameraStyles.unProject(secondMousePos, Gdx.input.getX(), Gdx.input.getY(), escape.WIDTH, escape.HEIGHT, viewport);
+            CameraStyles.unProject(secondMousePos, Gdx.input.getX(), Gdx.input.getY(), Game.WIDTH, Game.HEIGHT, viewport);
 
             if(pausedGame) {
                 if(scoreHud.getButton(ScoreHud.BUTTON.NEXT).getBounds().contains(secondMousePos.x, secondMousePos.y)) {

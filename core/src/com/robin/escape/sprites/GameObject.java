@@ -1,13 +1,11 @@
 package com.robin.escape.sprites;
 
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
 import com.robin.escape.managers.ObjectManager;
 
 public class GameObject {

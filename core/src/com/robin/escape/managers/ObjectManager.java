@@ -1,12 +1,11 @@
 package com.robin.escape.managers;
 
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.sprites.Enemy;
 import com.robin.escape.sprites.GameObject;
 import com.robin.escape.sprites.MovingObject;
@@ -52,7 +51,7 @@ public class ObjectManager {
         return isFocused;
     }
     public void setSeleced(Vector3 mousePos){
-        switch ((int)(Math.abs(objectset.getPosition().x - (mousePos.x - (mousePos.x % escape.TILEWIDTH)))/ escape.TILEWIDTH)){
+        switch ((int)(Math.abs(objectset.getPosition().x - (mousePos.x - (mousePos.x % Game.TILEWIDTH)))/ Game.TILEWIDTH)){
             case 0:
                 selectedType = TYPE.PLAYER;
                 break;
@@ -106,7 +105,7 @@ public class ObjectManager {
                         player.getPosition().set(worldX,worldY,0);
                     break;
                 case ENEMY:
-                    objects.add(new Enemy(worldX - (worldX % (escape.TILEWIDTH)), worldY - (worldY % (escape.TILEHEIGHT)),
+                    objects.add(new Enemy(worldX - (worldX % (Game.TILEWIDTH)), worldY - (worldY % (Game.TILEHEIGHT)),
                             ENEMY, patrolX, patrolY, style,
                             new Rectangle(
                                     5,

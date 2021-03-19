@@ -1,15 +1,13 @@
 package com.robin.escape.managers;
 
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
+import com.robin.escape.Game;
 import com.robin.escape.sprites.GameObject;
 import com.robin.escape.sprites.Props;
-import com.robin.escape.sprites.Tile;
 
 import java.util.ArrayList;
 
@@ -53,7 +51,7 @@ public class PropsManager {
     public ArrayList<Props> getProps(){return props;}
     public void setSelected(Vector3 mousePos){
         this.mousePos = mousePos;
-        switch ((int)(Math.abs(propsset.getPosition().x - (mousePos.x - (mousePos.x % escape.TILEWIDTH)))/ escape.TILEWIDTH)){
+        switch ((int)(Math.abs(propsset.getPosition().x - (mousePos.x - (mousePos.x % Game.TILEWIDTH)))/ Game.TILEWIDTH)){
             case 0:
             case 1:
                 selectedProp = PROPS.SNOWTREE;
@@ -103,7 +101,7 @@ public class PropsManager {
         if(propType != null) {
             switch (propType) {
                 case SNOWTREE:
-                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % escape.TILEWIDTH), worldPos.y - (worldPos.y % escape.TILEHEIGHT),0), SNOWTREE, propType,
+                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % Game.TILEWIDTH), worldPos.y - (worldPos.y % Game.TILEHEIGHT),0), SNOWTREE, propType,
                             new Rectangle(
                                     9,
                                     20,
@@ -129,7 +127,7 @@ public class PropsManager {
                     )));
                     break;
                 case HORFENCE:
-                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % escape.TILEWIDTH), worldPos.y - (worldPos.y % escape.TILEHEIGHT),0), HORFENCE, propType,
+                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % Game.TILEWIDTH), worldPos.y - (worldPos.y % Game.TILEHEIGHT),0), HORFENCE, propType,
                             new Rectangle(
                                     0,
                                     -5,
@@ -138,7 +136,7 @@ public class PropsManager {
                             )));
                     break;
                 case FENCELEFT:
-                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % escape.TILEWIDTH), worldPos.y - (worldPos.y % escape.TILEHEIGHT),0), FENCELEFT, propType,
+                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % Game.TILEWIDTH), worldPos.y - (worldPos.y % Game.TILEHEIGHT),0), FENCELEFT, propType,
                             new Rectangle(
                                     -2,
                                     0,
@@ -147,7 +145,7 @@ public class PropsManager {
                     )));
                     break;
                 case FENCERIGHT:
-                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % escape.TILEWIDTH), worldPos.y - (worldPos.y % escape.TILEHEIGHT),0), FENCERIGHT, propType,
+                    props.add(new Props(new Vector3(worldPos.x - (worldPos.x % Game.TILEWIDTH), worldPos.y - (worldPos.y % Game.TILEHEIGHT),0), FENCERIGHT, propType,
                             new Rectangle(
                                     12,
                                     0,

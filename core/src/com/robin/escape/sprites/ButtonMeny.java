@@ -1,15 +1,10 @@
 package com.robin.escape.sprites;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.robin.escape.escape;
-import com.robin.escape.utilities.FontHandler;
 
 public class ButtonMeny extends Clickable{
     private Vector3 layoutPosition;
